@@ -1,20 +1,20 @@
-# 🤖 AI Job Search Agent
+#  AI Job Search Agent
 
 An intelligent job recommendation system that searches, analyzes, and ranks jobs based on user skills and resume.
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 🔍 Real-time job search
-- 🧠 Resume skill extraction
-- ⚖️ Smart job matching & ranking
-- 📊 Match score + skill gap analysis
-- 🧠 Thought tracing (AI reasoning display)
+-  Real-time job search
+-  Resume skill extraction
+-  Smart job matching & ranking
+-  Match score + skill gap analysis
+-  Thought tracing (AI reasoning display)
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - Frontend: React (Vite)
 - Backend: FastAPI
@@ -23,7 +23,7 @@ An intelligent job recommendation system that searches, analyzes, and ranks jobs
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 1. User enters job query
 2. System fetches job listings
@@ -33,7 +33,7 @@ An intelligent job recommendation system that searches, analyzes, and ranks jobs
 
 ---
 
-## 📸 Output
+##  Output
 
 - Job title, company, location
 - Match score
@@ -42,7 +42,7 @@ An intelligent job recommendation system that searches, analyzes, and ranks jobs
 
 ---
 
-## 🔧 Setup
+##  Setup
 
 ```bash
 # Backend
