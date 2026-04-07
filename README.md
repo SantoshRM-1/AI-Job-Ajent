@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🚀 FutureRole API: AI Job Search Platform</h1>
+  <h1> FutureRole API: AI Job Search Platform</h1>
   
   <p>
     <b>A next-generation, agentic AI recruitment tool that bridges the gap between candidates and their perfect roles.</b>
@@ -15,25 +15,25 @@
 
 ---
 
-## 🌟 Overview
+##  Overview
 
 **FutureRole** goes beyond standard keyword-matching. By utilizing **Groq's hyper-fast LLaMA-3.3-70b**, **LangChain multi-agent workflows**, and **In-Memory Vector Search**, this platform analyzes a candidate's resume holistically to retrieve, rank, and explain job matches in real-time.
 
 ---
 
-## ✨ Core Features
+## Core Features
 
 | Feature | Description |
 | :--- | :--- |
-| 🧠 **Live Agent Reasoning** | Watch the AI "think" in real-time via Server-Sent Events (SSE). |
-| 📊 **Hybrid Scoring Engine** | Combines Semantic Similarity (40%), LLM Heuristics (30%), Rule-based Logic (20%), and Recency (10%). |
-| 🕵️ **Intelligent Resume Parsing** | Deep extraction of skills, experience level, and role alignment from PDFs. |
-| 💬 **Explainable AI (XAI)** | Plain-English explanations of skill gaps and alignment for every job. |
-| 🎓 **Mock Interview Gen** | Automatically generates customized interview prep questions tailored perfectly to the match. |
+|  **Live Agent Reasoning** | Watch the AI "think" in real-time via Server-Sent Events (SSE). |
+|  **Hybrid Scoring Engine** | Combines Semantic Similarity (40%), LLM Heuristics (30%), Rule-based Logic (20%), and Recency (10%). |
+|  **Intelligent Resume Parsing** | Deep extraction of skills, experience level, and role alignment from PDFs. |
+|  **Explainable AI (XAI)** | Plain-English explanations of skill gaps and alignment for every job. |
+|  **Mock Interview Gen** | Automatically generates customized interview prep questions tailored perfectly to the match. |
 
 ---
 
-## 🧱 Architecture Workflow
+##  Architecture Workflow
 
 The backend is driven by a decentralized agent architecture:
 
@@ -45,7 +45,7 @@ The backend is driven by a decentralized agent architecture:
 
 ---
 
-## 🚀 Quick Start Guide
+##  Quick Start Guide
 
 ### 1. Repository Setup
 ```bash
@@ -82,7 +82,7 @@ npm install
 npm run dev
 ```
 
-> 🎯 **You're all set!** Visit `http://localhost:5173`, upload your resume, and let the agents do the heavy lifting!
+>  **You're all set!** Visit `http://localhost:5173`, upload your resume, and let the agents do the heavy lifting!
 
 ---
 
