@@ -1,19 +1,40 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend.routes.job_routes import router as job_router
+from dotenv import load_dotenv
+from contextlib import asynccontextmanager
 
-app = FastAPI()
+# Explicitly load from backend directory or project root
+load_dotenv(dotenv_path="backend/.env")
+load_dotenv(dotenv_path=".env")
+
+from backend.models.database import engine, Base
+from backend.routes.job_routes import router as job_router
+from backend.routes.stream_routes import router as stream_router
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Create all DB tables on startup
+    Base.metadata.create_all(bind=engine)
+    yield
+
+app = FastAPI(
+    title="AI Job Search Agent",
+    description="Multi-agent AI system for job matching & ranking",
+    version="1.0.0",
+    lifespan=lifespan
+)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:5174", "http://localhost:5175", "http://127.0.0.1:5173", "http://127.0.0.1:5174"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
 app.include_router(job_router)
+app.include_router(stream_router)
 
 @app.get("/")
 def home():
-    return {"message": "AI Job Agent Running 🚀"}
+    return {"message": "AI Job Agent Running 🚀"}
